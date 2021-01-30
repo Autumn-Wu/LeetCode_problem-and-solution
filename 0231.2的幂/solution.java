@@ -22,3 +22,10 @@
     {
         return (n>0)&&(n&(n-1))==0;
     }
+    /*
+        方法3：二次幂数的二进制表示仅有一个1
+     */
+    public boolean isPowerOfTwo3(int n)
+    {
+        return (n>0)&&Integer.bitCount(n)==1;
+    }
